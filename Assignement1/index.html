@@ -75,7 +75,7 @@
         <!-- Francois Hobby -->
         <section>
             <h1 id="game-development">Game Development</h1>
-            <h3>The Start Of It</h3>
+            <h3>The Start Of it All</h3>
             <p>
                 I started doing game development when I was 17 years old. It was only a small hobby at the time, but I
                 enjoyed it nonetheless. When the global pandemic hit in 2020, I started to really explore game
@@ -140,4 +140,64 @@
         &copy INL 120 Practical 2
     </footer>
 </body>
+<style>
+    html{
+        font-size: 20px;
+
+    }
+
+    body{
+        display: grid;
+        grid-template-columns: 150px auto 150px;
+        grid-template-rows: 80px auto 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        grid-column: 1/4;
+        grid-row: 0/1;
+        display: grid;
+        align-items: center;
+        /*placeholder colour*/
+        background-color: lightcoral;
+    }
+
+    header nav ul{
+        display: flex;
+        padding: 0;
+    }
+
+    header nav ul li{
+        font-size: 1.35em;
+        list-style: none;
+        flex: 1;
+        text-align: center;
+    }
+
+    header nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    main{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        /*placeholder colour*/
+        background-color: #dcdcdc;
+        padding: 20px;
+    }
+
+    footer{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*placeholder colour*/
+        background-color: #303C6C;
+    }
+</style>
 </html>
+
+
