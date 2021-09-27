@@ -91,12 +91,19 @@
                     I started doing game development when I was 17 years old. It was only a small hobby at the time,
                     but I enjoyed it nonetheless. When the global pandemic hit in 2020, I started to really explore
                     game development. I stared out with Unity engine that uses C#, this was my first mainstream
-                    coding language that I learnt, and it was a very enjoyable experience. I developed my first
-                    game in Unity in about 3 weeks. The game can be downloaded
-                    from <a href="https://starsoft-studios.itch.io/emberlast">Itch.io</a>.
-                    It's a very simple side scroller that has all the basic features of a game, none of it was
-                    revolutionary, but it was still my game.
+                    coding language that I learnt. I developed my first game in Unity in about 3 weeks. The game can
+                    be downloaded below. It's a very simple side scroller that has all the basic features of a game,
+                    none of it was revolutionary, but it was still my game.
                 </p>
+
+                <img  id="UnityImage" src="media/UnityLogo.png" alt="Unity Logo">
+
+                <div class="center">
+                    <iframe id="GameLink" src="https://itch.io/embed/594032?linkback=true&amp;border_width=5&amp;
+                        link_color=1684af&amp;border_color=3d3d3d" width="560" height="175" frameborder="0">
+                        <a href="https://starsoft-studios.itch.io/emberlast">EmberLast by StarSoft Studios</a>
+                    </iframe>
+                </div>
 
                 <br/>
 
@@ -110,11 +117,9 @@
                     a ton of advanced features and functionalities.
                 </p>
 
-                <br/>
+                <img  id="UnrealImage" src="media/UnrealLogo.png" alt="Unreal Logo">
 
-                <div class="gameDevImg">
-                    <img class="gameDevImg" src="media/CodeSnippet.PNG" alt="Snippet of code from my game">
-                </div>
+                <br/>
 
                 <h2 class="devSubHeading">Present Time</h2>
                 <p>
@@ -127,6 +132,10 @@
                     computer for long hours, and you also need to enjoy a challenge because to get good with any
                     engine it takes a ton of practice and trail and error.
                 </p>
+
+                <div class="gameDevImg">
+                    <img src="media/CodeSnippet.PNG" alt="Snippet of code from my game">
+                </div>
             </section>
 
             <hr/>
@@ -317,6 +326,16 @@
             padding: 20px 50px;
         }
 
+        #UnityImage{
+            width: 400px;
+            align-self: center;
+        }
+
+        #UnrealImage{
+            width: 200px;
+            align-self: center;
+        }
+
         hr{
             height: 8px;
             margin: 0;
@@ -333,6 +352,10 @@
 
         iframe {
             border-radius: 20px;
+        }
+
+        #GameLink{
+            border-radius: 0px;
         }
 
         /*===Utility Classes===*/
