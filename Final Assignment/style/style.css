@@ -1,11 +1,14 @@
 * {
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /*===Variables===*/
 :root {
-    --primary: #292929;
-    --accent: #1D6F87;
+    --primary: #0f192b;
+    --accent: #9c2222;
+    --off-white: #ecedf3;
 }
 
 /*===Header & Navigation===*/
@@ -13,6 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary);
+    padding: 20px;
 }
 
 nav>ul {
@@ -24,6 +28,21 @@ nav li {
 }
 
 /*===HTML=&=Body=Defaults===*/
+body {
+    background-color: #303030;
+}
+h1, h2, p, li {
+    color: var(--off-white);
+}
+
+.button {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--accent);
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
 
 /*===Fonts + Colour + Text===*/
 @font-face {
