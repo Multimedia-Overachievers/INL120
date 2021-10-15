@@ -8,11 +8,11 @@
     <body background="media/portfolio-background.png">
         <header style="background-color: var(--primary-color);">
             <nav>
-                <ul >
+                <ol>
                     <li><a href="#game-development">Francois - Game Development</a></li>
                     <li><a href="#music-production">Keelan - Music Production</a></li>
                     <li><a href="#dnd">Ross - Dungeons & Dragons</a></li>
-                </ul>
+                </ol>
             </nav>
         </header>
         <main>
@@ -166,7 +166,6 @@
                 <img class="dnd_img" src="media/SillarekWorld.jpg" alt="A map of my DnD campaign setting 'Sillarek'"/>
 
                 <h2 class="dnd_sub">Making Stuff</h2>
-                <!-- NO -->
                 <p>
                     Over the few years I've been playing DnD, I've collected and created a range of different things to add to the
                     game and generally enhance the experience at the table...
@@ -295,7 +294,6 @@
             font-weight: bold;
         }
 
-
         /*===Header=&=Nav===*/
         header{
             grid-column: 1/4;
@@ -305,12 +303,12 @@
             z-index: 1;
         }
 
-        header nav ul{
+        header nav ol{
             display: flex;
             padding: 0;
         }
 
-        header nav ul li{
+        header nav ol li{
             font-size: 1.35em;
             list-style: none;
             flex: 1;
@@ -319,7 +317,6 @@
             border-left:solid 2px white;
         }
 
-
         header li:nth-child(1){
             border-left:none;
         }
@@ -327,18 +324,17 @@
             border-right:none;
         }
 
-        header nav ul li a{
+        header nav ol li a{
             text-decoration: none;
             color: white;
             font-weight: 400;
         }
 
-        header nav ul li a:hover{
+        header nav ol li a:hover{
             color: white;
         }
 
         /*===Body=&=Main===*/
-
         body{
             display: grid;
             grid-template-columns: 150px auto 150px;
