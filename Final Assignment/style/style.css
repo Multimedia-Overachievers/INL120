@@ -28,15 +28,15 @@ nav li {
 /*===Fonts + Colour + Text===*/
 @font-face {
     font-family: 'Azzi';
-    src: url('azeretmono-italic-variablefont_wght-webfont.woff2') format('woff2'),
-    url('azeretmono-italic-variablefont_wght-webfont.woff') format('woff');
+    src: url('fonts/AzeretMono-VariableFont_wght.ttf') format('ttf'),
+    url('fonts/AzeretMono-VariableFont_wght.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Azz';
-    src: url('azeretmono-variablefont_wght-webfont.woff2') format('woff2'),
-    url('azeretmono-variablefont_wght-webfont.woff') format('woff');
+    src: url('fonts/AzeretMono-Italic-VariableFont_wght.ttf') format('ttf'),
+    url('fonts/AzeretMono-Italic-VariableFont_wght.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
