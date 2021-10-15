@@ -1,7 +1,26 @@
+* {
+
+}
+
 /*===Variables===*/
 :root {
-    --primary: #FF5050;
-    --secondary: #1D6F87;
+    --primary: #292929;
+    --accent: #1D6F87;
+}
+
+/*===Header & Navigation===*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
 }
 
 /*===HTML=&=Body=Defaults===*/
