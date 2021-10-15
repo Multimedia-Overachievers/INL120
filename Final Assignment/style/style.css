@@ -1,0 +1,27 @@
+/*===Variables===*/
+:root {
+    --primary: #FF5050;
+    --secondary: #1D6F87;
+}
+
+/*===HTML=&=Body=Defaults===*/
+
+/*===Fonts + Colour + Text===*/
+@font-face {
+    font-family: 'Azzi';
+    src: url('azeretmono-italic-variablefont_wght-webfont.woff2') format('woff2'),
+    url('azeretmono-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Azz';
+    src: url('azeretmono-variablefont_wght-webfont.woff2') format('woff2'),
+    url('azeretmono-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Azz', sans-serif;
+    font-size: 16px;
+}
