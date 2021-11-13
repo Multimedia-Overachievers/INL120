@@ -207,15 +207,16 @@ main {
 }
 
 /*===About Us===*/
-#games-list{
-    display: flex;
-    flex-wrap: wrap;
+#about-us-table{
+    border-collapse: separate;
+    border-spacing: 15px;
 }
 
-#games-list iframe{
-    padding: 5px;
-    border-radius: 10px;
+#about-us-table iframe{
+    padding: 10px;
+    border-radius: 17px;
 }
+
 
 #about-us-inPage-nav{
     padding-top: 30px;
