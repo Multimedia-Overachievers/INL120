@@ -133,7 +133,6 @@ h1 {
     box-shadow: inset 200px 0 0 0 var(--primary);
 }
 
-
 main {
     height: 90vh;
 }
@@ -173,7 +172,6 @@ main {
     }
 }
 
-
 #home {
     justify-content: space-between;
     align-items: center;
@@ -196,6 +194,70 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#games-list iframe{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#about-us-inPage-nav{
+    padding-top: 30px;
+    display: flex;
+    flex-direction:column;
+    flex-grow: 1;
+    align-items: center;
+
+    font-size: 1.5rem;
+    letter-spacing: 0.9px;
+    line-height: 1.2;
+}
+
+#about-us-inPage-nav a{
+    color: var(--off-white);
+}
+/* mouse over link */
+#about-us-inPage-nav a:hover {
+    color: var(--accent);
+}
+
+#about-us-main {
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--primary);
+    margin-top: 50px;
+    padding: 70px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-us-main p {
+    width: 1000px;
+    margin-bottom: 40px;
+}
+
+#about_body {
+    padding: 0;
+    min-height: 100%;
+}
+
+#about-us-footer {
+    bottom:0;
+    width:100%;
+    height:60px;
+}
+
+#partners {
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+#partners img{
+    width: 125px;
+    height: 100%;
 }
 
 /*===BACKGROUND BY SARANSH SINHA ON CODEPEN===*/
