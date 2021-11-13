@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,11 +24,11 @@
 
 /*===Variables===*/
 :root {
-    --background-color: #2b2b2b;
-    --primary: #3b3b3b;
+    --background-color: #1f1f1f;
+    --primary: #2b2b2b;
     --accent: #a17db0;
     --off-white: #ecedf3;
-    --title-font: Azzi, sans-serif;
+    --title-font: Josefin Sans, sans-serif;
     --main-font-italic: Azz, sans-serif;
     --main-font: Azzi, sans-serif;
 }
@@ -37,7 +39,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1f1f1f;
+    background-color: var(--background-color);
     height: 100vh;
 }
 
@@ -86,13 +88,35 @@ nav li:hover {
 }
 
 /*===HTML=&=Body=Defaults===*/
-h1, h2, p, li {
+html {
+    min-height: 100vh;
+}
+
+h1, h2, h3, p, li {
     color: var(--off-white);
 }
 
 h1 {
     font-size: 4rem;
     font-family: var(--title-font);
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: var(--title-font);
+    justify-content: center;
+    margin: 40px;
+    border-bottom: 5px solid rgba(236, 237, 243, 0.2);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    letter-spacing: 0.9px;
+    line-height: 1.2;
 }
 
 .button {
@@ -141,14 +165,6 @@ main {
     overflow: hidden;
 }
 
-#about-us-main {
-    width: 70%;
-    margin: 0 auto;
-    background-color: var(--background-color);
-    margin-top: 50px;
-    padding: 90px;
-}
-
 /*===Home Page===*/
 #logo {
     width: 600px;
@@ -192,8 +208,7 @@ main {
 /*===About Us===*/
 #games-list{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 #games-list iframe{
