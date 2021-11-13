@@ -275,6 +275,167 @@ main {
     height: 100%;
 }
 
+/*===Contact Form===*/
+#contact-form {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+.formBox{
+    flex-direction: column;
+    max-width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #2b2b2b;
+    font-family: inherit;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.formBox p{
+    font-size: 100%;
+    margin: 10px 0;
+    flex-basis: 100%;
+}
+.formBox label{
+    font-size: 98%;
+    font-family: inherit;
+}
+.formBox hr{
+    width: 80%;
+    text-align: center;
+    border: solid 2px lavender;
+    background: url("") no-repeat center scroll;
+    margin: 10px auto;
+}
+/* Select which games */
+#selectionBox{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+}
+.formBox img{
+    max-width: 190px;
+    opacity: 60%;
+    transition: max-width 0.7s;
+    filter: grayscale(100%);
+}
+.formBox .games{
+    display:none;
+}
+.formBox .games:checked ~ figure>img{
+    max-width: 210px;
+    opacity: 100%;
+    filter: brightness(150%);
+}
+.formBox figcaption{
+    text-align: center;
+    font-size: 90%;
+    font-family: inherit;
+}
+/* ---------------------------------------end */
+/* ++++++++++++++++++++++++++++++++ inputs */
+.formBox p {
+    font-size: 1.4rem;
+    margin: 30px 0 30px 0;
+}
+.formBox input, textarea {
+    font-size: 1.3rem;
+    letter-spacing: 1.6px;
+}
+.formBox input[type="email"],
+.formBox input[type="tel"],
+.formBox input[type="text"]{
+    width: 35%;
+    margin: 6px;
+    padding: 15px 7px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: inherit;
+    font-family: inherit;
+    color: var(--off-white);
+}
+.formBox input[type="text"]{
+    outline: solid 2px var(--accent);
+}
+.formBox textarea{
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    border: solid 2px var(--accent);
+    border-radius: 4px;
+    font-family: inherit;
+    color: inherit;
+    background-color: inherit;
+}
+.formBox input[type="text"]:hover,
+.formBox textarea:hover{
+    background-color: #ecedf3;
+}
+.formBox input[type="email"]:focus,
+.formBox input[type="tel"]:focus,
+.formBox input[type="text"]:focus,
+.formBox textarea:focus{
+    background-color: var(--accent);
+    outline: solid 2px var(--accent);
+    color: var(--off-white);
+}
+/* placeholder */
+.formBox input[type="text"]::placeholder,
+.formBox textarea::placeholder{
+    font-family: inherit;
+    color: ivory;
+    font-size: 100%;
+}
+.formBox input[type="text"]:focus::placeholder,
+.formBox input[type="text"]:hover::placeholder,
+.formBox textarea:focus::placeholder,
+.formBox textarea:hover::placeholder{
+    color: var(--accent);
+}
+
+/* ++++++++++++++++++++++++++++++++ radio */
+.formBox input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--off-white);
+    margin: 0;
+    margin-right: 7px;
+    width: 1em;
+    height: 1em;
+    border: 0.2em solid black;
+    border-radius: 50% 30%;
+}
+input[type="radio"]:focus,
+input[type="radio"]:checked{
+    outline: solid var(--accent) max(3px, 0.15em) ;
+    outline-offset: max(3px, 0.15em);
+    background-color: #a17db0;
+}
+/* ++++++++++++++++++++++++++++++++ buttons */
+input[type="submit"],
+input[type="reset"]{
+    background-color: var(--accent);
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 7px 15px;
+    margin: 5px 10px;
+    width: 10%;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    outline: 2px solid #a17db0;
+    box-shadow: inset 2px 2px 4px #a17db0;
+}
+input[type="submit"]:focus,
+input[type="reset"]:focus{
+    background-color: #a17db0;
+}
+/* ---------------------------------------end */
+
 /*===BACKGROUND BY SARANSH SINHA ON CODEPEN===*/
 #stars {
     width: 1px;
