@@ -301,8 +301,16 @@ main {
     margin-top: 120px;
     display: flex;
     align-items: center;
+    align-content:  center;
+    flex-wrap: wrap;
 }
-#conta
+#contact-form h2{
+    flex-basis: 100%;
+}
+
+form {
+    flex-direction: column;
+}
 .formBox{
     flex-direction: column;
     max-width: 60%;
@@ -321,7 +329,7 @@ main {
 }
 
 .formBox label{
-    font-size: 98%;
+    font-size: 1.4rem;
     font-family: inherit;
 }
 .formBox hr{
@@ -390,6 +398,7 @@ main {
 }
 .formBox input[type="text"]{
     outline: solid 2px var(--accent);
+    width: 30%;
 }
 
 .formBox textarea{
@@ -437,7 +446,7 @@ main {
     margin-right: 7px;
     width: 1em;
     height: 1em;
-    border: 0.2em solid black;
+    border: 0.2em solid var(--primary);
     border-radius: 50% 30%;
 }
 input[type="radio"]:focus,
