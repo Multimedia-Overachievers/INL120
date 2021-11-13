@@ -65,9 +65,109 @@
             </div>
             <div id="contact-form">
                 <h2 id="contact-us" class="flex"> Contact Us</h2>
-                <!-- mail-to -->
-                <!-- form -->
-                <!-- Textboxes Checkboxes Radio Buttons -->
+                <div class="formBox flex">
+                    <p>We would love to hear your thoughts about us or our games, drop us a message below! &hearts;</p>
+                    <form method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Jane Doe" required><br>
+                        <p>Choose How you would like to be contacted:</p>
+                        <div>
+                            <input type="radio" value="email" id="email" name="contactOpt" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="emailtext" placeholder="JaneDoe@example.com">
+                            <input type="radio" value="phone" id="phone" name="contactOpt" required>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phonetext" placeholder="0124204655">
+                        </div>
+                        <hr>
+                        <p>Please select which game(s) you are telling us about:</p>
+                        <div id="selectionBox">
+                            <label>
+                                <input type="checkbox" name="games" class="games" id="creaks" value="creaks"><br>
+                                <figure>
+                                    <img src="media/images/creaks.png">
+                                    <figcaption><a>Creaks</a></figcaption>
+                                </figure>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="games" class="games" id="welcomeHome" value="welcomeHome"><br>
+                                <figure>
+                                    <img src="media/images/welcome-home.png">
+                                    <figcaption><a>Welcome Home</a></figcaption>
+                                </figure>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="games" class="games" id="off" value="off"><br>
+                                <figure>
+                                    <img src="media/images/off.png">
+                                    <figcaption><a>OFF</a></figcaption>
+                                </figure>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="games" class="games" id="limbo" value="limbo"><br>
+                                <figure>
+                                    <img src="media/images/limbo.png">
+                                    <figcaption><a>Limbo</a></figcaption>
+                                </figure>
+                            </label>
+                        </div>
+                        <hr>
+                        <label>Write your message here:<br><textarea cols="100" rows="10" placeholder="Hi Moonrealm Devs! I wanted to chat about..."></textarea></label>
+                        <input type="submit" value="Send!">
+                        <input type="reset" value="Clear">
+                    </form>
+                    <script>
+                        //before button press
+                        let greyEmail = document.getElementById("emailtext");
+                        greyEmail.style.backgroundColor = "#3b3b3b";
+                        greyEmail.style.border = "grey";
+                        greyEmail.style.color = "grey";
+                        let greyPhone = document.getElementById("phonetext");
+                        greyPhone.style.backgroundColor = "#3b3b3b";
+                        greyPhone.style.border = "grey";
+                        greyPhone.style.color = "grey";
+                        let email_btn = document.getElementById("email");
+                        //functions
+                        function disableEm() {
+                            document.getElementById("emailtext").disabled = true;
+                        }
+                        function undisableEm() {
+                            document.getElementById("emailtext").disabled = false;
+                            document.getElementById("emailtext").setAttribute("required", "required");
+                        }
+                        function disablePh() {
+                            document.getElementById("phonetext").disabled = true;
+                        }
+                        function undisablePh() {
+                            document.getElementById("phonetext").disabled = false;
+                            document.getElementById("phonetext").setAttribute("required", "required");
+                        }
+                        disableEm();
+                        disablePh();
+                        //on button press
+                        email_btn.onclick = function(){
+                            greyEmail.style.backgroundColor = "#ecedf3";
+                            greyEmail.style.border = "lavender";
+                            greyEmail.style.color = "black";
+                            greyPhone.style.backgroundColor = "grey";
+                            greyPhone.style.border = "black";
+                            greyPhone.style.color = "#F0F4EF";
+                            undisableEm();
+                            disablePh();
+                        }
+                        let phone_btn  = document.getElementById("phone");
+                        phone_btn.onclick = function(){
+                            greyPhone.style.backgroundColor = "#ecedf3";
+                            greyPhone.style.border = "lavender";
+                            greyPhone.style.color = "black";
+                            greyEmail.style.backgroundColor = "grey";
+                            greyEmail.style.border = "black";
+                            greyEmail.style.color = "#F0F4EF";
+                            disableEm();
+                            undisablePh();
+                        }
+                    </script>
+                </div>
             </div>
         </main>
         <div>
