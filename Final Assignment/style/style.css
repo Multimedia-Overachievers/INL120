@@ -74,7 +74,7 @@ a {
 }
 
 nav {
-    width: 13%;
+    width: 20%;
 }
 
 nav>ul {
@@ -219,21 +219,32 @@ main {
 
 #about-us-inPage-nav{
     padding-top: 30px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-
     font-size: 1.5rem;
     letter-spacing: 0.9px;
     line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 300px;
+    padding: 30px;
+    background-color: var(--accent);
+    border-radius: 10px 0 0 10px;
+    height: 320px;
+    justify-content: space-evenly;
 }
 
 #about-us-inPage-nav a{
     color: var(--off-white);
+    width: 200px;
+    text-align: center;
+    transition: color 1s;
 }
+
 /* mouse over link */
 #about-us-inPage-nav a:hover {
-    color: var(--accent);
+    background-color: #dbb5eb;
+    color: var(--primary);
 }
 
 #about-us-main {
@@ -287,7 +298,7 @@ main {
 
 /*===Contact Form===*/
 #contact-form {
-    margin: 5px 0;
+    margin-top: 120px;
     display: flex;
     align-items: center;
 }
@@ -316,9 +327,9 @@ main {
 .formBox hr{
     width: 80%;
     text-align: center;
-    border: solid 2px lavender;
+    border: solid 2px var(--accent);
     background: url("") no-repeat center scroll;
-    margin: 10px auto;
+    margin: 50px auto;
 }
 /* Select which games */
 #selectionBox{
@@ -329,9 +340,11 @@ main {
 }
 .formBox img{
     max-width: 190px;
+    border-radius: 10px;
     opacity: 60%;
     transition: max-width 0.7s;
     filter: grayscale(100%);
+    margin: 0 10px;
 }
 .formBox .games{
     display:none;
@@ -348,14 +361,20 @@ main {
 }
 /* ---------------------------------------end */
 /* ++++++++++++++++++++++++++++++++ inputs */
+
+#name-input {
+    align-items: center;
+}
 .formBox p {
     font-size: 1.4rem;
     margin: 30px 0 30px 0;
 }
+
 .formBox input, textarea {
     font-size: 1.3rem;
     letter-spacing: 1.6px;
 }
+
 .formBox input[type="email"],
 .formBox input[type="tel"],
 .formBox input[type="text"]{
@@ -372,6 +391,7 @@ main {
 .formBox input[type="text"]{
     outline: solid 2px var(--accent);
 }
+
 .formBox textarea{
     width: 90%;
     margin: 10px;
@@ -436,6 +456,7 @@ input[type="reset"]{
     padding: 7px 15px;
     margin: 5px 10px;
     width: 10%;
+    color: var(--off-white);
 }
 input[type="submit"]:hover,
 input[type="reset"]:hover{

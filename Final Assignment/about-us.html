@@ -9,21 +9,23 @@
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body id="about_body">
-        <header>
-            <p>Moonrealm Productions</p>
+        <header id="back-to-top">
+            <p>Moonrealm Productions &trade;</p>
             <nav>
                 <ul>
                     <a href="index.html"><li>Home</li></a>
                     <a href="about-us.html"><li class="active">About Us</li></a>
+                    <a href="mailto:moonrealms@support.co.za"><li>Email Us</li></a>
                 </ul>
             </nav>
         </header>
         <main id="about-us-background">
-            <div id="about-us-inPage-nav" class="flex">
+            <div id="about-us-inPage-nav">
                     <a href="#mission">Mission</a>
                     <a href="#partners">Partners</a>
                     <a href="#achievements">Achievements</a>
                     <a href="#contact-us">Contact Us</a>
+                    <a href="#back-to-top">Back to Top</a>
             </div>
             <div id="about-us-main">
                 <h2 id="mission"> Mission </h2>
@@ -64,12 +66,15 @@
                 </div>
             </div>
             <div id="contact-form">
-                <h2 id="contact-us" class="flex"> Contact Us</h2>
+
                 <div class="formBox flex">
+                    <h2 id="contact-us" class="flex"> Contact Us</h2>
                     <p>We would love to hear your thoughts about us or our games, drop us a message below! &hearts;</p>
-                    <form method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Jane Doe" required><br>
+                    <form method="post" class="flex">
+                        <div class="flex" id="name-input">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Jane Doe" required><br>
+                        </div>
                         <p>Choose How you would like to be contacted:</p>
                         <div>
                             <input type="radio" value="email" id="email" name="contactOpt" required>
@@ -115,8 +120,10 @@
                         </div>
                         <hr>
                         <label>Write your message here:<br><textarea cols="100" rows="10" placeholder="Hi Moonrealm Devs! I wanted to chat about..."></textarea></label>
-                        <input type="submit" value="Send!">
-                        <input type="reset" value="Clear">
+                        <div>
+                            <input type="submit" value="Send!">
+                            <input type="reset" value="Clear">
+                        </div>
                     </form>
                     <script>
                         //before button press
@@ -172,10 +179,5 @@
                 </div>
             </div>
         </main>
-        <div>
-            <footer id="about-us-footer">
-                <p><small> copyright &copy; 2010-2021 Moonrealm Productions </small></p>
-            </footer>
-        </div>
     </body>
 </html>
